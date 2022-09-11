@@ -53,7 +53,7 @@ public void verifyuserID() throws Throwable {
 	Reporter.log("running verify user id",true);
 	String actID = home.verifyuserID();
 	 String expID=Utility_class.geTD(0, 0);
-	Assert.assertEquals(expID,actID,"both are different tc is failed");
+	Assert.assertEquals(expID,actID,"both are same tc is failed");
 }
 @AfterMethod
 public void logoutApp() {
@@ -62,6 +62,7 @@ public void logoutApp() {
 @AfterClass
 public void closeBrowser() {
 	Reporter.log("close the app",true);
+	
 }
 
 }
